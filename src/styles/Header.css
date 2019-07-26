@@ -1,0 +1,129 @@
+.header{
+    height: 95vh;
+    background-image: linear-gradient(to left bottom, #32ff69c2, #27aa81c0), url('https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg');
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 100%, 100% 90%, 100% 0, 0 0);
+    position: relative;
+}
+
+.heading-primary{
+    text-transform: uppercase;
+    color: rgb(58, 57, 57);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    backface-visibility: hidden;
+}
+
+.heading-primary--main{
+    letter-spacing: 25px;
+    animation: moveInBottom 1s ease-out;
+}
+
+.heading-primary--sub{
+    font-size: 16px;
+    letter-spacing: 5px;
+    animation: moveInTop 1s ease-out;
+}
+
+@keyframes moveInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    80%{
+        transform: translateY(-10%)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveInTop{
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    80%{
+        transform: translateY(10%)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn:link,
+.btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all, .2s;
+    font-size: 16px;
+    color: rgb(58, 57, 57);
+    position: relative;
+}
+
+.btn--white{
+    background-color: white;
+    border-radius: 20%;
+    display: inline-block;
+    padding: 7px 20px;
+  
+}
+
+.header__text-box{
+    text-align: center;
+}
+
+.btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.212) 
+}
+
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.212);
+}
+
+.btn::after{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn--white::after{
+    background-color: white;
+}
+
+.btn:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+    
+}
+
+.btn--animated{
+    animation: moveInButton .75s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInButton{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+   
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
