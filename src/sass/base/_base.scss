@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+    margin:0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%; /* 16 default 10/16 = 62.5 % */
+    /* rem is in relation too root font-size */
+}
+
+body{
+   box-sizing: border-box;
+}
+

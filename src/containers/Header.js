@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styles/Header.css';
+// import '../styles/Header.css';
+import '../sass/_main.scss';
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
 

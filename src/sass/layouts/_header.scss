@@ -1,0 +1,19 @@
+.header{
+    height: 95vh;
+    background-image: linear-gradient(
+        to left bottom, 
+        rgba($color-primary-light, 0.8), 
+        rgba($color-primary-dark, 0.8)), url('https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg');
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 100%, 100% 90%, 100% 0, 0 0);
+    position: relative;
+    
+    &__text-box{
+        text-align: center;
+        top: 4rem;
+        left: 4rem;
+    }
+
+}
+
