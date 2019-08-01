@@ -4,7 +4,7 @@
         text-transform: uppercase;
         text-decoration: none;
         transition: all, .2s;
-        font-size: 1.6rem;
+        font-size: $default-font-size;
         color: $color-black;
         position: relative;
     }
@@ -20,6 +20,7 @@
         }
     }
 
+    
     &:hover{
         transform: translateY(-.2rem);
         box-shadow: 0rem 1rem 2rem rgba($color-black, 0.212); 
@@ -51,5 +52,30 @@
     &--animated{
         animation: moveInButton .75s ease-out .75s;
         animation-fill-mode: backwards;
+    }
+}
+
+.btn-text {
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: .1rem solid $color-primary;
+        padding: .3rem;
+        transition: all .2s;
+    }
+
+    &:hover{
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translate(-2px);
+    }
+
+    &:active{
+        box-shadow: 0 1rem 1rem rgba($color-black, .15);
+        transform: translate(0);
     }
 }
