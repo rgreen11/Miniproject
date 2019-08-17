@@ -13,10 +13,28 @@ export default ()=>{
                 <div className='row'>
                     <div className='story'>
                         <figure className='story__shape'>
-                            <img src='https://images.unsplash.com/photo-1544246014-a4c238738ca6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1001&q=80' alt='Person on a Tour' className='story__img'></img>
+                            <img src='https://images.unsplash.com/photo-1550252133-7b7895b84f49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80' alt='Person on a Tour' className='story__img'/>
+                                <figcaption className='story__caption'>
+                                    Tasha Jones
+                                </figcaption>
                         </figure>
                         <div className='story__text'>
                             <h3 className='heading-tertiary u-margin-bottom-small'> I had the best week ever with my family</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec nisl pharetra dolor mollis mattis and some other textnjsh jjsp,nw js. Phasellus nec nisl pharetra dolor mollis mattis and some other textnjsh.
+                        </div>
+                    </div>
+                </div>
+
+                <div className='row'>
+                    <div className='story'>
+                        <figure className='story__shape'>
+                            <img src='https://images.unsplash.com/photo-1533624800173-4b9d2f20b966?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80' alt='Person on a Tour' className='story__img'/>
+                                <figcaption className='story__caption'>
+                                    Katrina Wilson
+                                </figcaption>
+                        </figure>
+                        <div className='story__text'>
+                            <h3 className='heading-tertiary u-margin-bottom-small'>Wow! My life is completely different now</h3>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec nisl pharetra dolor mollis mattis and some other textnjsh jjsp,nw js. Phasellus nec nisl pharetra dolor mollis mattis and some other textnjsh.
                         </div>
                     </div>
