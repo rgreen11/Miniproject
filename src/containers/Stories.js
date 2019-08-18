@@ -49,7 +49,7 @@ export default ()=>{
                 </div>
 
                 <div className='u-center-text u-margin-top-huge'>
-                    <a href='#' className=' btn-text'>Read all stories &rarr;</a>
+                    <a href='#' className=' btn-text'>Read all stories &rarr;</a> {/* right arrow */}
                 </div>
             </section>
    ) 
